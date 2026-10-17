@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy – Notification History</title>
+<meta name="description" content="Privacy Policy for the Notification History Android app.">
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #1d1d1f;
+    --muted: #5f6368;
+    --border: #e3e3e6;
+    --surface: #f6f7f9;
+    --accent: #1a73e8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121214;
+      --text: #ececee;
+      --muted: #a0a3a8;
+      --border: #2c2c31;
+      --surface: #1c1c20;
+      --accent: #8ab4f8;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 16px 64px; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 8px; }
+  h2 { font-size: 1.3rem; margin: 40px 0 8px; padding-top: 8px; border-top: 1px solid var(--border); }
+  h3 { font-size: 1.05rem; margin: 24px 0 4px; }
+  p, ul { margin: 8px 0; }
+  ul { padding-left: 22px; }
+  li { margin: 4px 0; }
+  a { color: var(--accent); }
+  .meta { color: var(--muted); margin-bottom: 24px; }
+  .summary { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 16px 20px; }
+  .summary ul { margin: 4px 0 0; }
+  .table-wrap { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 0.95rem; }
+  th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--border); }
+  th { background: var(--surface); font-weight: 600; }
+  footer { margin-top: 48px; color: var(--muted); font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Privacy Policy</h1>
+<p class="meta">Notification History for Android · Effective date: October 17, 2026</p>
+
+<p>This policy explains what information the Notification History app ("the app", "we", "us") handles, where it is stored, and who it is shared with.</p>
+
+<div class="summary">
+  <strong>In short</strong>
+  <ul>
+    <li>Your notification history is saved on your device. We do not upload it, except when you export it yourself.</li>
+    <li>Excel exports (and some PDF exports) are created on our server. The server sends the file back to you and does not keep your notification content.</li>
+    <li>The app shows ads from Google AdMob. Google may collect your Advertising ID and device information to show ads.</li>
+    <li>If you send us feedback, we receive your email address, your message, and details about your device.</li>
+    <li>We do not sell your data.</li>
+  </ul>
+</div>
+
+<h2>1. Information stored on your device</h2>
+<p>The app's main purpose is to save notifications so you can read them later, even after they have been dismissed. To do this, it stores the following on your device:</p>
+<ul>
+  <li><strong>Notifications from other apps:</strong> the app name and package name, the notification title and text, the time it arrived, and the app icon. This needs the Notification Access permission, which you grant in Android settings.</li>
+  <li><strong>The list of apps installed on your device:</strong> used to show app names and icons and to let you choose which apps to save notifications from.</li>
+  <li><strong>Your settings:</strong> for example language, theme, the apps you chose and the auto-delete period.</li>
+</ul>
+<p>This data is kept in the app's private storage, which other apps cannot read. It is not uploaded to us, is not used for ads, and is not included in Android cloud backups. The only exception is when you choose to export it (see section 2.1).</p>
+
+<h2>2. Information that leaves your device</h2>
+
+<h3>2.1 Exporting your notifications</h3>
+<p>When you export notifications, Excel files are created by our server, which runs on Google Firebase Cloud Functions. Some PDF files are created there too; others are created directly on your device. For a server export:</p>
+<ul>
+  <li>The app sends the notifications you chose to export over an encrypted (HTTPS) connection. For each notification this is the app name, package name, title, text and time. The app also sends the file title, your time format and your language.</li>
+  <li>The server creates the file and sends it back to your device. It does not store your notification content.</li>
+  <li>The server keeps a short record of each export: a device identifier (your Android ID), the file format, the number of notifications, the file name, the export options and the time. We use this record to keep the export feature working and to find problems with it.</li>
+</ul>
+<p>After the file is saved, it is yours to keep, delete or share. If you share it with another app, that app's privacy policy applies.</p>
+
+<h3>2.2 Feedback you send us</h3>
+<p>If you send feedback from inside the app, we store the following in Google Firebase Firestore:</p>
+<ul>
+  <li>The email address you enter and your message.</li>
+  <li>Information about your device: device identifiers (Android ID and the device's unique ID), model, brand, manufacturer and device name, Android version, app version and build, mobile carrier name, memory and storage figures, device type (phone or tablet, emulator or not) and the system user agent.</li>
+</ul>
+<p>We use this only to reply to you and to fix bugs that affect your device. Sending feedback is optional.</p>
+<p>If you tap "Contact us" instead, your email app opens and you send us a normal email.</p>
+
+<h3>2.3 Advertising (Google AdMob)</h3>
+<p>The app shows full-screen "App Open" ads from Google AdMob when you come back to the app. Ads never appear during first-time setup or permission screens. To show and measure ads, Google's Mobile Ads SDK may collect:</p>
+<ul>
+  <li>Your device's Advertising ID</li>
+  <li>Your IP address, and your approximate location based on it</li>
+  <li>Device and app information, such as the device model, Android version and app version</li>
+  <li>Ad interactions, such as which ads were shown and whether you tapped them</li>
+</ul>
+<p>Google handles this data under its own policies. See <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">How Google uses information from sites or apps that use its services</a> and the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>.</p>
+<p><strong>Your choices:</strong></p>
+<ul>
+  <li>In the European Economic Area, the UK and Switzerland, and wherever else the law requires it, the app asks for your consent before showing personalized ads. Google provides this consent form. To change your choice later, open the app's <strong>Settings → Ad privacy options</strong>.</li>
+  <li>You can reset or delete your Advertising ID, or opt out of personalized ads, in your device's settings (<strong>Settings → Google → Ads</strong> on most Android devices).</li>
+</ul>
+<p>Your notification history is never shared with Google AdMob or used to choose ads.</p>
+
+<h3>2.4 App configuration</h3>
+<p>When the app starts, it reads a few settings from Google Firebase Firestore: the latest app version, ad settings and export settings. These requests do not include your notifications. As with any internet connection, Google receives your IP address and basic technical information about the request.</p>
+<p>The app does not use analytics or crash-reporting services.</p>
+
+<h2>3. How we use information</h2>
+<ul>
+  <li>To provide the app's features: saving, searching, filtering and exporting notifications</li>
+  <li>To reply to feedback and fix bugs</li>
+  <li>To show ads, which keep the app free</li>
+  <li>To keep the app working across Android versions and tell you about required updates</li>
+</ul>
+
+<h2>4. Sharing</h2>
+<p>We do not sell, rent or trade your information. Data leaves your device only in the cases above. It is processed by Google, which provides Firebase (servers and database) and AdMob (ads) to us as a service provider. We may also disclose information if the law requires it.</p>
+
+<h2>5. Permissions the app uses</h2>
+<div class="table-wrap">
+<table>
+  <thead>
+    <tr><th>Permission</th><th>Why the app needs it</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Notification access</td><td>Read incoming notifications and save them on your device. You can turn this off at any time in Android settings.</td></tr>
+    <tr><td>Show notifications</td><td>Show the app's own ongoing notification while it is saving notifications, plus occasional messages from the app.</td></tr>
+    <tr><td>Foreground service</td><td>Keep saving notifications reliably while the app is closed.</td></tr>
+    <tr><td>Run at startup</td><td>Start saving notifications again after your device restarts.</td></tr>
+    <tr><td>Ignore battery optimizations</td><td>Stop Android from shutting down the app in the background, which would make it miss notifications. You are asked first and can say no.</td></tr>
+    <tr><td>Storage (older Android versions)</td><td>Save exported files to your device.</td></tr>
+    <tr><td>Internet</td><td>Create exports, send feedback, load app settings and show ads.</td></tr>
+    <tr><td>Advertising ID</td><td>Used by Google AdMob to show ads (see section 2.3).</td></tr>
+  </tbody>
+</table>
+</div>
+
+<h2>6. Keeping and deleting your data</h2>
+<ul>
+  <li><strong>On your device:</strong> notifications are kept until you delete them, they are removed by the auto-delete setting, you clear the app's data, or you uninstall the app. Each of these removes them permanently.</li>
+  <li><strong>On our servers:</strong> we keep feedback and export records only as long as we need them for the purposes in this policy. To have them deleted, email us at the address below. For feedback, include the email address you used.</li>
+</ul>
+
+<h2>7. Security</h2>
+<p>Data sent between the app and our servers is encrypted with HTTPS. Server data is stored on Google Firebase. No method of storage or transfer is completely secure, but we take reasonable steps to protect your information.</p>
+
+<h2>8. Your rights</h2>
+<p>Depending on where you live (for example under the GDPR in Europe or the CCPA in California), you may have the right to access, correct or delete your personal information, to object to or limit how it is used, and to withdraw consent at any time. To use any of these rights, contact us at the address below. You can withdraw ad consent at any time in <strong>Settings → Ad privacy options</strong>.</p>
+
+<h2>9. Children</h2>
+<p>The app is not directed at children under 13, and we do not knowingly collect personal information from them. If you believe a child has sent us personal information, contact us and we will delete it.</p>
+
+<h2>10. Changes to this policy</h2>
+<p>We may update this policy when the app changes. The effective date at the top shows when it was last changed. If you keep using the app after an update, the updated policy applies.</p>
+
+<h2>11. Contact</h2>
+<p>If you have questions about this policy or your data, email <a href="mailto:schneider310399@gmail.com">schneider310399@gmail.com</a>.</p>
+
+<footer>© 2026 Notification History</footer>
+
+</main>
+</body>
+</html>
